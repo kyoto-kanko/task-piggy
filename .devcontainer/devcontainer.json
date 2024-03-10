@@ -1,0 +1,33 @@
+{
+    "name": "Ruby CLI App Development",
+    "build": {
+        "context": "..",
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "[ruby]": {
+            "editor.formatOnSave": true,
+            "editor.defaultFormatter": "misogi.ruby-rubocop"
+        },
+        "ruby.rubocop.executePath": "/usr/local/bundle/bin/",
+        "ruby.rubocop.onSave": true
+    },
+    "extensions": [
+        "Shopify.ruby-extensions-pack",
+        "castwide.solargraph",
+        "misogi.ruby-rubocop",
+        "oderwat.indent-rainbow",
+        "mosapride.zenkaku",
+        "shardulm94.trailing-spaces",
+        "GitHub.copilot-chat",
+        "GitHub.copilot",
+        "eamodio.gitlens",
+        "streetsidesoftware.code-spell-checker",
+        "ms-azuretools.vscode-docker",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "vscode-icons-team.vscode-icons"
+    ],
+    "forwardPorts": [],
+    "postCreateCommand": "bundle install",
+    "remoteUser": "root"
+}
