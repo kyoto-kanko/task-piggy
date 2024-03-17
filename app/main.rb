@@ -28,7 +28,7 @@ class TodoCLI < Thor
   end
 
   desc 'index TASK', 'タスク一覧の表示'
-  def Index
+  def index
     puts '----------------------------Task list.----------------------------'
     CSV.foreach('task-list.csv') do |row|
       puts "taskName: [#{row[0]}], createdAt: [#{row[1]}]"
