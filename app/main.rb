@@ -15,6 +15,7 @@ class TodoCLI < Thor
 
     CSV.open('TaskList.csv', 'wb') do |csv|
       csv << %w[TaskName CreatedAt TimeSpent]
+      csv << ["Test", "2024-03-17 20:02:49", 0]
     end
   end
 
