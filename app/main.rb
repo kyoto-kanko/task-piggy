@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'thor'
 require 'csv'
 require 'time'
